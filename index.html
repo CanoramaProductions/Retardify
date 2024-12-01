@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retardify</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Retardify Your Name</h1>
+    <p>Enter your name and let us "retardify" it!</p>
+    
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button onclick="retardifyName()">Retardify</button>
+
+    <div id="result"></div>
+
+    <script>
+        function retardifyName() {
+            const name = document.getElementById("nameInput").value.trim();
+            const resultElement = document.getElementById("result");
+
+            // Check if the entered name is "Amerie"
+            if (name.toLowerCase() === "amerie") {
+                resultElement.textContent = "Sorry, this name is already retarted.";
+            } else {
+                // List of possible transformations
+                const transformations = [
+                    "GASUDYUE", "FHEHIWS", "FOHIE", "UGOWPOEOJ", 
+                    "AJEFOHN", "N&GWB", "GHGENS", "Jason", 
+                    "HWGINEGN", "JGNWNG"
+                ];
+
+                // Pick a random transformation
+                const randomTransformation = transformations[Math.floor(Math.random() * transformations.length)];
+
+                resultElement.textContent = "Your new name: " + randomTransformation;
+            }
+        }
+    </script>
+
+</body>
+</html>
