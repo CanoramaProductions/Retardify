@@ -38,7 +38,7 @@
     <div id="result"></div>
 
     <footer>
-        Made by Jason Cruz. This is what you get Amerie :)
+        Made by Jason Cruz. This is what you get Amerie.
     </footer>
 
     <script>
@@ -49,14 +49,12 @@
             // Check if the entered name is "Amerie"
             if (name.toLowerCase() === "amerie") {
                 resultElement.textContent = "Sorry, this name is already retarted.";
+            } else if (name === "") {
+                resultElement.textContent = "Please enter a name.";
             } else {
                 // List of possible transformations
-                const transformations = [
-                    "GASUDYUE", "FHEHIWS", "FOHIE", "UGOWPOEOJ", 
-                    "AJEFOHN", "N&GWB", "GHGENS", "Jason", 
-                    "HWGINEGN", "JGNWNG", "FGEUGGFNSOB", "GCEBRGYE",
-                    "TENFYSBE", "Hellen Keller", "FHWHWHDNB", "Ethan Isaac Ivon"
-                    "FGEGFNNSY", "ASBDYFCFW", "Ms. Mason", "Mr. Stockman"
+             const transformations = [
+                    "GASUDYUE", "FHEHIWS", "FOHIE", "UGOWPOEOJ", "AJEFOHN", "N&GWB", "GHGENS", "Jason", "HWGINEGN", "JGNWNG", "FGEUGGFNSOB", "GCEBRGYE","TENFYSBE", "Hellen Keller", "FHWHWHDNB", "Ethan Isaac Ivon" "FGEGFNNSY", "ASBDYFCFW", "Ms. Mason", "Mr. Stockman"
                 ];
 
                 // Pick a random transformation
